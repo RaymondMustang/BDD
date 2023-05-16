@@ -5,10 +5,10 @@ num2=int(input("Ingrese el valor 2: "))
 while True:
     print("--Menu--")
     print("1. Sumar")
-    print("2.")
+    print("2. Restar :D")
     print("3.")
     print("4. Multiplicar")
-    print("5.")
+    print("5. Numero mayor menor o igual :D")
     print("6.")
     print("7. Salir")
 
@@ -24,7 +24,9 @@ while True:
 
     elif opcion==2:
         print("Opcion 2")
-        #Codigo aqui
+        res=num1-num2
+
+        print("la resta de sus numeros es: ",res)
 
     elif opcion==3:
         print("Opcion 3")
@@ -37,7 +39,15 @@ while True:
 
     elif opcion==5:
         print("Opcion 5")
-        #Codigo aqui
+        if num1>num2:
+            print(num1," es el numero mayor")
+            print(num2,"es el numero menor")
+        if num1<num2:
+            print(num2," es el numero mayor")
+            print(num1,"es el numero menor")
+        if num1==num2:
+            print(num1,num2,"son numeros iguales")
+       
 
     elif opcion==6:
         print("Opcion 6")
