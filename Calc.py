@@ -6,10 +6,10 @@ while True:
     print("--Menu--")
     print("1. Sumar")
     print("2. Restar :D")
-    print("3.")
+    print("3. Dividir")
     print("4. Multiplicar")
     print("5. Numero mayor menor o igual :D")
-    print("6.")
+    print("6. Exponencial")
     print("7. Salir")
 
     opcion=int(input("Seleccion una opcion: "))
@@ -29,8 +29,11 @@ while True:
         print("la resta de sus numeros es: ",res)
 
     elif opcion==3:
-        print("Opcion 3")
-        #Codigo aqui
+        if num2==0:
+            print("Error: No se puede dividir entre cero.")
+        else:
+            resultado=num1/num2
+            print("El resultado de la división es:", resultado)
 
     elif opcion==4:
         print("Multiplicacion")     
@@ -50,8 +53,11 @@ while True:
        
 
     elif opcion==6:
-        print("Opcion 6")
-        #Codigo aqui
+        if num1<0 and num2!=int(num2):
+            print("Error: No se puede calcular la exponenciación con un número negativo y un exponente no entero.")
+        else:
+            resultado=num1**num2
+            print("El resultado de la exponenciación es:", resultado)
 
     elif opcion==7:
         print("Gracias por su visita")
